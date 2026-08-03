@@ -26,7 +26,7 @@ export const site = {
   },
   phone: ["+91 8981789150", "+91 8013938526"],
   email: "basana.infrastructure@gmail.com",
-  whatsapp: "8013938526",
+  whatsapp: "+91 8013938526",
   mapEmbedUrl:
     "https://www.google.com/maps?q=22.871778,88.414106&z=15&output=embed",
   mapLink:
