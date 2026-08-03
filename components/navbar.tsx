@@ -1,12 +1,26 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Building2, Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { navItems, site } from "@/lib/site";
+
+function BasanaLogoMark() {
+  return (
+    <Image
+      src={site.logo.imageSrc}
+      alt={site.logo.imageAlt}
+      fill
+      priority
+      sizes="44px"
+      className="object-contain"
+    />
+  );
+}
 
 export function Navbar() {
   const pathname = usePathname();
@@ -21,8 +35,8 @@ export function Navbar() {
           aria-label="Basana Infrastructure home"
           onClick={() => setIsOpen(false)}
         >
-          <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
-            <Building2 className="h-6 w-6" aria-hidden="true" />
+          <span className="relative flex h-11 w-11 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-slate-200/70">
+            <BasanaLogoMark />
           </span>
           <span className="leading-tight">
             <span className="block text-base font-bold text-slate-950">

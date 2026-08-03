@@ -11,7 +11,7 @@ export function AboutSection() {
       <div className="container grid gap-10 lg:grid-cols-[0.9fr_1fr] lg:items-center">
         <MotionWrapper>
           <div className="rounded-lg border bg-white p-8 shadow-sm">
-            <span className="flex h-14 w-14 items-center justify-center rounded-lg bg-blue-50 text-primary">
+            <span className="flex h-14 w-14 items-center justify-center rounded-lg bg-red-50 text-primary">
               <Building2 className="h-7 w-7" aria-hidden="true" />
             </span>
             <h2 className="mt-8 text-3xl font-semibold tracking-tight text-slate-950">

@@ -1,16 +1,29 @@
 import Link from "next/link";
-import { Building2, Mail, Phone } from "lucide-react";
+import Image from "next/image";
+import { Mail, Phone } from "lucide-react";
 import { navItems, site } from "@/lib/site";
 
+function BasanaLogoMark() {
+  return (
+    <Image
+      src={site.logo.imageSrc}
+      alt={site.logo.imageAlt}
+      fill
+      priority
+      sizes="44px"
+      className="object-contain"
+    />
+  );
+}
 export function Footer() {
   return (
     <footer className="border-t bg-slate-950 text-white">
       <div className="container grid gap-10 py-12 md:grid-cols-[1.4fr_0.8fr_1fr]">
         <div>
           <Link href="/" className="flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-white text-primary">
-              <Building2 className="h-6 w-6" aria-hidden="true" />
-            </span>
+            <span className="relative flex h-11 w-11 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-slate-200/70">
+            <BasanaLogoMark />
+          </span>
             <span>
               <span className="block text-lg font-bold">{site.name}</span>
               <span className="text-sm text-slate-300">
