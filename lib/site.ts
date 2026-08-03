@@ -29,8 +29,9 @@ export const site = {
   whatsapp: "+91 8013938526",
   mapEmbedUrl:
     "https://www.google.com/maps?q=22.871778,88.414106&z=15&output=embed",
+  // Universal maps link that opens Google Maps on desktop and mobile
   mapLink:
-    "https://maps.app.goo.gl/mM47GsjXvAGHnCH77?g_st=aw",
+    "https://www.google.com/maps/search/?api=1&query=22.871778,88.414106",
   mission:
     "To deliver high-quality construction, supply, and service solutions through professionalism, innovation, and customer-focused approaches while maintaining safety and sustainability standards.",
   vision:
