@@ -27,11 +27,12 @@ export const site = {
   phone: ["+91 8981789150", "+91 8013938526"],
   email: "basana.infrastructure@gmail.com",
   whatsapp: "+91 8013938526",
+  // Embed URL for the specific location (resolved from the short maps link)
   mapEmbedUrl:
-    "https://www.google.com/maps?q=22.871778,88.414106&z=15&output=embed",
-  // Universal maps link that opens Google Maps on desktop and mobile
+    "https://www.google.com/maps?q=22.8848446,88.4261468&z=17&output=embed",
+  // Universal maps link that opens Google Maps on desktop and mobile for the same coords
   mapLink:
-    "https://www.google.com/maps/search/?api=1&query=22.871778,88.414106",
+    "https://www.google.com/maps/search/?api=1&query=22.8848446,88.4261468",
   mission:
     "To deliver high-quality construction, supply, and service solutions through professionalism, innovation, and customer-focused approaches while maintaining safety and sustainability standards.",
   vision:
